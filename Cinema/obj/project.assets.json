@@ -8,39 +8,23 @@
     "net6.0": []
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\victor.mariano\\.nuget\\packages\\": {},
-=======
-    "C:\\Users\\jadina.garcia\\.nuget\\packages\\": {},
->>>>>>> a0cea4fc1b53f03ab91486a98d624902de4f5b3b
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\victor.mariano\\Documents\\ExercicioOOP-Cinema\\Cinema\\Cinema.csproj",
       "projectName": "Cinema",
       "projectPath": "C:\\Users\\victor.mariano\\Documents\\ExercicioOOP-Cinema\\Cinema\\Cinema.csproj",
       "packagesPath": "C:\\Users\\victor.mariano\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\victor.mariano\\Documents\\ExercicioOOP-Cinema\\Cinema\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\jadina.garcia\\Documents\\Projeto POO\\Cinema\\Cinema.csproj",
-      "projectName": "Cinema",
-      "projectPath": "C:\\Users\\jadina.garcia\\Documents\\Projeto POO\\Cinema\\Cinema.csproj",
-      "packagesPath": "C:\\Users\\jadina.garcia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jadina.garcia\\Documents\\Projeto POO\\Cinema\\obj\\",
->>>>>>> a0cea4fc1b53f03ab91486a98d624902de4f5b3b
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-<<<<<<< HEAD
         "C:\\Users\\victor.mariano\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-        "C:\\Users\\jadina.garcia\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> a0cea4fc1b53f03ab91486a98d624902de4f5b3b
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -85,5 +69,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\victor.mariano\\Documents\\ExercicioOOP-Cinema\\Cinema\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

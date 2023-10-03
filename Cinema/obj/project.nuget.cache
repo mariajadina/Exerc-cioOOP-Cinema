@@ -1,14 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "zpM+bdZUf7hYEaKpolWuwX3oNcs57ozwTvqwEZ74kdeTznhmdFU+Zv7PSSp/8tOyPlINuA/2fmloeyrRG5f5aw==",
   "success": true,
   "projectFilePath": "C:\\Users\\victor.mariano\\Documents\\ExercicioOOP-Cinema\\Cinema\\Cinema.csproj",
-=======
-  "dgSpecHash": "jKJsRQt4ZF7UreGZdz/McN4LgzE3tfj3AI9Nk+vNDE2XceLgNOPZSPe2D5Xtl8NX5dmWw6kO+aCBe93TZn3FXw==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\jadina.garcia\\Documents\\Projeto POO\\Cinema\\Cinema.csproj",
->>>>>>> a0cea4fc1b53f03ab91486a98d624902de4f5b3b
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\victor.mariano\\Documents\\ExercicioOOP-Cinema\\Cinema\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
