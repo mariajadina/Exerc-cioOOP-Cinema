@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jadina\\OneDrive - SENAC-SC\\Entra21\\Exercícios POO\\Projeto POO\\Projeto POO\\Cinema\\Cinema.csproj": {}
+    "C:\\Users\\victor.mariano\\Documents\\ExercicioOOP-Cinema\\Cinema\\Cinema.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jadina\\OneDrive - SENAC-SC\\Entra21\\Exercícios POO\\Projeto POO\\Projeto POO\\Cinema\\Cinema.csproj": {
+    "C:\\Users\\victor.mariano\\Documents\\ExercicioOOP-Cinema\\Cinema\\Cinema.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jadina\\OneDrive - SENAC-SC\\Entra21\\Exercícios POO\\Projeto POO\\Projeto POO\\Cinema\\Cinema.csproj",
+        "projectUniqueName": "C:\\Users\\victor.mariano\\Documents\\ExercicioOOP-Cinema\\Cinema\\Cinema.csproj",
         "projectName": "Cinema",
-        "projectPath": "C:\\Users\\Jadina\\OneDrive - SENAC-SC\\Entra21\\Exercícios POO\\Projeto POO\\Projeto POO\\Cinema\\Cinema.csproj",
-        "packagesPath": "C:\\Users\\Jadina\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jadina\\OneDrive - SENAC-SC\\Entra21\\Exercícios POO\\Projeto POO\\Projeto POO\\Cinema\\obj\\",
+        "projectPath": "C:\\Users\\victor.mariano\\Documents\\ExercicioOOP-Cinema\\Cinema\\Cinema.csproj",
+        "packagesPath": "C:\\Users\\victor.mariano\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\victor.mariano\\Documents\\ExercicioOOP-Cinema\\Cinema\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Componentes, ferramentas e SDKs Visual Studio\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jadina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\victor.mariano\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
