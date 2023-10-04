@@ -17,17 +17,7 @@ namespace Cinema
         private string horario { get; set; } 
         private double valorTotal { get; set; }
         private string beneficio { get; set; }
+        private string tipoPagemnto { get; set; }
         
-
-        //Construtor
-        public Pedido(string nomeCliente, string cpf, double valorTotal, string beneficio)
-        {
-            this.nomeCliente = nomeCliente;
-            this.cpf = cpf;
-            this.valorTotal = valorTotal;
-            this.beneficio = beneficio;
-            //Alterar
-        }
-
     }
 }
