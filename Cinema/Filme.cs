@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cinema
 {
-    internal class Filme
+    public class Filme
     {
         //Atributos
         private string titulo { get; set; }
@@ -14,20 +14,30 @@ namespace Cinema
         private string classIndicativa { get; set; }
         private int duracao { get; set; }
 
-        //Construtor
-        public Filme(string titulo, string genero, string classIndicativa, int duracao)
+        public void Popular()
         {
-            this.titulo = titulo;            
-            this.genero = genero;
-            this.classIndicativa = classIndicativa;
-            this.duracao = duracao;
+            Console.Write("Digite o nome do filme: ");
+            titulo = Console.ReadLine();
+
+            Console.Write("Digite o genêro do filme: ");
+            genero = Console.ReadLine();
+
+            Console.Write("Digite a classe indicativa do filme: ");
+            classIndicativa = Console.ReadLine();
+
+            Console.Write("Digite a duração em minutos do filme: ");
+            duracao = Convert.ToInt32(Console.ReadLine());
         }
-        public void Mostrar()
+
+        public void Listar()
         {
-            Console.WriteLine(this.titulo);
-            Console.WriteLine(this.genero);
-            Console.WriteLine(this.classIndicativa);
-            Console.WriteLine(this.duracao);
+            Console.WriteLine($" Nome: {titulo}");
+            Console.WriteLine($" Genêro: {genero}");
+            Console.WriteLine($" Classificação Indicativa: {classIndicativa}");
+            Console.WriteLine($" Duração: {duracao}");
+            Console.WriteLine("-----------------------");
+
         }
     }
+
 }
