@@ -27,15 +27,16 @@ namespace Cinema
                 }
                 else if (i != 1)
                 {
+                    Console.Clear();
                     Console.WriteLine($"Usuário ou senha Inválida! Você tem mais {i - 1} tentativa(s)");
                     Console.WriteLine("-------------------------------------------------------");
                 }
                 else
-                { 
+                {
+                    Console.Clear();
                     Console.WriteLine("Tentativas inválidas. Tente em outro momento!");     
                 }
             }
-            Console.ReadLine();
         }
     }
 }
