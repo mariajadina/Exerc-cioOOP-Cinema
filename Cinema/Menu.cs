@@ -8,6 +8,9 @@ namespace Cinema
 {
     public class Menu
     {
+        public static FilmeModel FilmeModel = new FilmeModel();
+        public static SalaModel SalaModel = new SalaModel();
+
         private static string MenuPrincipal()
         {
             Console.WriteLine("Menu principal");
@@ -43,10 +46,10 @@ namespace Cinema
                     MostrarSubMenuCliente();
                     break;
                 case "2":
-                    MostrarSubMenuCRUD();
+                    MostrarSubMenuFilme();
                     break;
                 case "3":
-                    MostrarSubMenuCRUD();
+                    MostrarSubMenuSala();
                     break;
                 case "0":
                     break;
@@ -83,22 +86,32 @@ namespace Cinema
                     break;
             }
         }
-        public static void MostrarSubMenuCRUD()
+
+        public static void MostrarSubMenuFilme(string mensagem = "")
         {
             Console.Clear();
+            Console.WriteLine("Filmes");
+            Console.WriteLine(mensagem);
+            Console.WriteLine();
             switch (SubMenuCRUD())
             {
                 case "1":
-                    //TODO: Create
+                    FilmeModel.CriarLista();
+                    MostrarSubMenuFilme("Filme adicionado com sucesso!");
                     break;
                 case "2":
-                    //TODO: Read
+                    FilmeModel.LerLista();
+                    Console.WriteLine("Pressione qualquer tecla para continuar.");
+                    Console.ReadLine();
+                    MostrarSubMenuFilme();
                     break;
                 case "3":
-                    //TODO: Update
+                    FilmeModel.AtualizarLista();
+                    MostrarSubMenuFilme("Filme alterado com sucesso!");
                     break;
                 case "4":
-                    //TODO: Delete
+                    FilmeModel.RemoverItem();
+                    MostrarSubMenuFilme("Filme removido com sucesso!");
                     break;
                 case "0":
                     MostrarMenuPrincipal();
@@ -107,7 +120,45 @@ namespace Cinema
                     Console.WriteLine("Opção inválida.");
                     Console.WriteLine("Pressione qualquer tecla para voltar ao menu.");
                     Console.ReadLine();
-                    MostrarSubMenuCliente();
+                    MostrarSubMenuFilme();
+                    break;
+            }
+        }
+
+        public static void MostrarSubMenuSala(string mensagem = "")
+        {
+            Console.Clear();
+            Console.WriteLine("Salas");
+            Console.WriteLine(mensagem);
+            Console.WriteLine();
+            switch (SubMenuCRUD())
+            {
+                case "1":
+                    SalaModel.CriarLista();
+                    MostrarSubMenuSala("Sala adicionada com sucesso!");
+                    break;
+                case "2":
+                    SalaModel.LerLista();
+                    Console.WriteLine("Pressione qualquer tecla para continuar.");
+                    Console.ReadLine();
+                    MostrarSubMenuSala();
+                    break;
+                case "3":
+                    SalaModel.AtualizarLista();
+                    MostrarSubMenuSala("Sala alterada com sucesso!");
+                    break;
+                case "4":
+                    SalaModel.RemoverItem();
+                    MostrarSubMenuSala("Sala removida com sucesso!");
+                    break;
+                case "0":
+                    MostrarMenuPrincipal();
+                    break;
+                default:
+                    Console.WriteLine("Opção inválida.");
+                    Console.WriteLine("Pressione qualquer tecla para voltar ao menu.");
+                    Console.ReadLine();
+                    MostrarSubMenuSala();
                     break;
             }
         }
