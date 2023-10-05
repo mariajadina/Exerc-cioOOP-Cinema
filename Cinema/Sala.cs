@@ -14,10 +14,10 @@ namespace Cinema
 
         public void Popular()
         {
-            Console.Write("Digite o nome do filme: ");
+            Console.Write("Digite o nome da sala: ");
             nome = Console.ReadLine();
 
-            Console.Write("Digite a duração em minutos do filme: ");
+            Console.Write("Digite a quantidade de cadeiras da sala: ");
             qtdCadeiras = Convert.ToInt32(Console.ReadLine());
         }
 

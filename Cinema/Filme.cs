@@ -22,7 +22,7 @@ namespace Cinema
             Console.Write("Digite o genêro do filme: ");
             genero = Console.ReadLine();
 
-            Console.Write("Digite a classe indicativa do filme: ");
+            Console.Write("Digite a classificação indicativa do filme: ");
             classIndicativa = Console.ReadLine();
 
             Console.Write("Digite a duração em minutos do filme: ");
