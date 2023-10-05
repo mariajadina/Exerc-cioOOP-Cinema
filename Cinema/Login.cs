@@ -34,7 +34,7 @@ namespace Cinema
                 else
                 {
                     Console.Clear();
-                    Console.WriteLine("Tentativas inválidas. Tente em outro momento!");     
+                    Console.WriteLine("Tentativas inválidas. Tente em outro momento!");
                 }
             }
         }

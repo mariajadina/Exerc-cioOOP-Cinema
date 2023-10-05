@@ -11,6 +11,12 @@ namespace Cinema
     {
         private List<Sala> salas = new List<Sala>();
 
+        public SalaModel()
+        {
+            salas.Add(new Sala("Candy", 30));
+            salas.Add(new Sala("Marshmallows", 40));
+            salas.Add(new Sala("Popcorn", 30));
+        }
         public void CriarLista()
         {
             Sala sala = new Sala();
