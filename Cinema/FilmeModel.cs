@@ -31,7 +31,7 @@ namespace Cinema
             LerLista();
             Console.WriteLine("Digite o id do item que deseja alterar:");
             int id = Convert.ToInt32(Console.ReadLine());
-            filmes[id].Popular();
+            filmes[id - 1].Popular();
         }
 
         public void RemoverItem()
@@ -39,7 +39,7 @@ namespace Cinema
             LerLista();
             Console.WriteLine("Digite o id do item que deseja remover:");
             int id = Convert.ToInt32(Console.ReadLine());
-            filmes.RemoveAt(id);
+            filmes.RemoveAt(id - 1);
         }
     }
 }
