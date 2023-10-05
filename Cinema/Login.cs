@@ -22,7 +22,7 @@ namespace Cinema
                 if (usuario == "joaocleber" && senha == "1234")
                 {
                     Console.Clear();
-                    Console.WriteLine(Menu.MostrarMenuPrincipal());
+                    Console.WriteLine(Menu.MenuPrincipal());
                     return;
                 }
                 else if (i != 1)

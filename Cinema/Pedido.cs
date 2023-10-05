@@ -18,6 +18,7 @@ namespace Cinema
         private double valorTotal { get; set; }
         private string beneficio { get; set; }
         private string tipoPagemnto { get; set; }
-        
     }
+
+
 }
