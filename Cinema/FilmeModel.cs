@@ -17,7 +17,7 @@ namespace Cinema
             filmes.Add(new Filme("Jogos Mortais X", "Terror", "18 anos", 119));
             filmes.Add(new Filme("Os Mercenários 4", "Ação", "18 anos", 103));
         }
-        public void CriarLista()
+        public void AdicionarItem()
         {
             Filme filme = new Filme();
             filme.Popular();
