@@ -17,7 +17,7 @@ namespace Cinema
             salas.Add(new Sala("Marshmallows", 40));
             salas.Add(new Sala("Popcorn", 30));
         }
-        public void CriarLista()
+        public void AdicionarItem()
         {
             Sala sala = new Sala();
             sala.Popular();
