@@ -20,5 +20,14 @@ namespace Cinema
             clientesVirtuais.Add(new ClienteVirtual("Pedro Souza", "20/09/1976", "384.254.548-86", "(47) 98542-9853", "pedrosouza@yahoo.com"));
             clientesVirtuais.Add(new ClienteVirtual("Marge Simpson", "20/09/1976", "753.124.698-69", "(47) 96451-3423", "margesimpson@yahoo.com"));
         }
+
+        public void LerLista()
+        {
+            for (int i = 0; i < clientesVirtuais.Count; i++)
+            {
+                Console.Write(i + 1);
+                clientesVirtuais[i].Listar();
+            }
+        }
     }
 }
