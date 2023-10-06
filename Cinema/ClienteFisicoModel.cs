@@ -20,5 +20,14 @@ namespace Cinema
             clientesFisicos.Add(new ClienteFisico("Idoso"));
             clientesFisicos.Add(new ClienteFisico("Idoso"));
         }
+
+        public void LerLista()
+        {
+            for (int i = 0; i < clientesFisicos.Count; i++)
+            {
+                Console.Write(i + 1);
+                clientesFisicos[i].Listar();
+            }
+        }
     }
 }

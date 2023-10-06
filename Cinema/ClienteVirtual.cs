@@ -140,7 +140,6 @@ namespace Cinema
             Console.WriteLine($" Telefone: {telefone}");
             Console.WriteLine($" E-mail: {email}");
             Console.WriteLine("-----------------------");
-
         }
     }
 }

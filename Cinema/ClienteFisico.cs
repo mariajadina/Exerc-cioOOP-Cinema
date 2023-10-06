@@ -45,5 +45,11 @@ namespace Cinema
                 this.beneficio = beneficio;
             }
         }
+
+        public void Listar()
+        {
+            Console.WriteLine($" Benefício: {beneficio}");
+            Console.WriteLine("-----------------------");
+        }
     }
 }
