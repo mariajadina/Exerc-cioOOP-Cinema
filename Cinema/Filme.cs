@@ -54,7 +54,7 @@ namespace Cinema
             Console.WriteLine($" Nome: {titulo}");
             Console.WriteLine($" Genêro: {genero}");
             Console.WriteLine($" Classificação Indicativa: {classIndicativa}");
-            Console.WriteLine($" Duração: {duracao}");
+            Console.WriteLine($" Duração: {duracao} min.");
             Console.WriteLine("-----------------------");
 
         }
