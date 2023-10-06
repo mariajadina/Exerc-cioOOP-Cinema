@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cinema
 {
-    internal class ClienteFisico
+    public class ClienteFisico
     {
         //Atributos
         private string beneficio;
@@ -36,6 +36,13 @@ namespace Cinema
             else
             {
                 return false;
+            }
+        }
+        public ClienteFisico(string beneficio = null)
+        {
+            if (!string.IsNullOrEmpty(beneficio))
+            {
+                this.beneficio = beneficio;
             }
         }
     }
