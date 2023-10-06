@@ -10,6 +10,13 @@ namespace Cinema
     {
         private List<Filme> filmes = new List<Filme>();
 
+        public FilmeModel()
+        {
+            filmes.Add(new Filme("Som da Liberdade", "Drama", "14 anos", 135)); 
+            filmes.Add(new Filme("Patrulha Canina: um Filme Superpoderoso", "Animação", "Livre", 88));
+            filmes.Add(new Filme("Jogos Mortais X", "Terror", "18 anos", 119));
+            filmes.Add(new Filme("Os Mercenários 4", "Ação", "18 anos", 103));
+        }
         public void CriarLista()
         {
             Filme filme = new Filme();

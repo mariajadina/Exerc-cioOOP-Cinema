@@ -14,6 +14,26 @@ namespace Cinema
         private string classIndicativa { get; set; }
         private int duracao { get; set; }
 
+        public Filme(string titulo = "", string genero = "", string classIndicativa = "", int duracao = 0)
+        {
+            if (!string.IsNullOrEmpty(titulo))
+            {
+                this.titulo = titulo;
+            }
+            if (!string.IsNullOrEmpty(genero))
+            {
+                this.genero = genero;
+            }
+            if (!string.IsNullOrEmpty(classIndicativa))
+            {
+                this.classIndicativa = classIndicativa;
+            }
+            if (duracao > 0)
+            {
+                this.duracao = duracao;
+            }
+        }
+
         public void Popular()
         {
             Console.Write("Digite o nome do filme: ");
