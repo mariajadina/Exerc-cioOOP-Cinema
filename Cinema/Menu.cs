@@ -96,20 +96,24 @@ namespace Cinema
             switch (SubMenuCRUD())
             {
                 case "1":
+                    Console.Clear();
                     FilmeModel.CriarLista();
                     MostrarSubMenuFilme("Filme adicionado com sucesso!");
                     break;
                 case "2":
+                    Console.Clear();
                     FilmeModel.LerLista();
                     Console.WriteLine("Pressione qualquer tecla para continuar.");
                     Console.ReadLine();
                     MostrarSubMenuFilme();
                     break;
                 case "3":
+                    Console.Clear();
                     FilmeModel.AtualizarLista();
                     MostrarSubMenuFilme("Filme alterado com sucesso!");
                     break;
                 case "4":
+                    Console.Clear();
                     FilmeModel.RemoverItem();
                     MostrarSubMenuFilme("Filme removido com sucesso!");
                     break;
@@ -134,20 +138,24 @@ namespace Cinema
             switch (SubMenuCRUD())
             {
                 case "1":
+                    Console.Clear();
                     SalaModel.CriarLista();
                     MostrarSubMenuSala("Sala adicionada com sucesso!");
                     break;
                 case "2":
+                    Console.Clear();
                     SalaModel.LerLista();
                     Console.WriteLine("Pressione qualquer tecla para continuar.");
                     Console.ReadLine();
                     MostrarSubMenuSala();
                     break;
                 case "3":
+                    Console.Clear();
                     SalaModel.AtualizarLista();
                     MostrarSubMenuSala("Sala alterada com sucesso!");
                     break;
                 case "4":
+                    Console.Clear();
                     SalaModel.RemoverItem();
                     MostrarSubMenuSala("Sala removida com sucesso!");
                     break;
