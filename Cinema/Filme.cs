@@ -13,8 +13,9 @@ namespace Cinema
         private string genero { get; set; }
         private string classIndicativa { get; set; }
         private int duracao { get; set; }
+        private List<string> horarios { get; set; } = new List<string>();
 
-        public Filme(string titulo = "", string genero = "", string classIndicativa = "", int duracao = 0)
+        public Filme(string titulo = "", string genero = "", string classIndicativa = "", int duracao = 0, List<string> horarios = null)
         {
             if (!string.IsNullOrEmpty(titulo))
             {
@@ -32,6 +33,11 @@ namespace Cinema
             {
                 this.duracao = duracao;
             }
+            if (horarios != null)
+            {
+                this.horarios = horarios;
+            }
+
         }
 
         public void Popular()
@@ -47,6 +53,8 @@ namespace Cinema
 
             Console.Write("Digite a duração em minutos do filme: ");
             duracao = Convert.ToInt32(Console.ReadLine());
+
+            HorarioFilme();
         }
 
         public void Listar()
@@ -55,7 +63,20 @@ namespace Cinema
             Console.WriteLine($" Genêro: {genero}");
             Console.WriteLine($" Classificação Indicativa: {classIndicativa}");
             Console.WriteLine($" Duração: {duracao} min.");
+            Console.WriteLine($" Horários: {string.Join(" - ", horarios)}");
             Console.WriteLine("-----------------------");
+
+        }
+        public void HorarioFilme()
+        {
+            Console.Write("Digite a quantidade de sessões que gostaria de adicionar para esse filme: ");
+            int sessao = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < sessao; i++)
+            {
+                Console.Write($"Digite o horário da sessão {i + 1}: ");
+                string horario = Console.ReadLine();
+                horarios.Add(horario);
+            }
 
         }
     }
