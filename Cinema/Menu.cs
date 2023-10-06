@@ -106,7 +106,7 @@ namespace Cinema
             {
                 case "1":
                     Console.Clear();
-                    FilmeModel.CriarLista();
+                    FilmeModel.AdicionarItem();
                     MostrarSubMenuFilme("Filme adicionado com sucesso!");
                     break;
                 case "2":
@@ -148,7 +148,7 @@ namespace Cinema
             {
                 case "1":
                     Console.Clear();
-                    SalaModel.CriarLista();
+                    SalaModel.AdicionarItem();
                     MostrarSubMenuSala("Sala adicionada com sucesso!");
                     break;
                 case "2":
