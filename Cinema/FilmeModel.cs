@@ -12,10 +12,10 @@ namespace Cinema
 
         public FilmeModel()
         {
-            filmes.Add(new Filme("Som da Liberdade", "Drama", "14 anos", 135)); 
-            filmes.Add(new Filme("Patrulha Canina: um Filme Superpoderoso", "Animação", "Livre", 88));
-            filmes.Add(new Filme("Jogos Mortais X", "Terror", "18 anos", 119));
-            filmes.Add(new Filme("Os Mercenários 4", "Ação", "18 anos", 103));
+            filmes.Add(new Filme("Som da Liberdade", "Drama", "14 anos", 135, new List<string> { "15:30", "19:30", "21:00" })); 
+            filmes.Add(new Filme("Patrulha Canina: um Filme Superpoderoso", "Animação", "Livre", 88, new List<string> { "14:00", "17:00", "19:00" }));
+            filmes.Add(new Filme("Jogos Mortais X", "Terror", "18 anos", 119, new List<string> { "18:30", "21:30"}));
+            filmes.Add(new Filme("Os Mercenários 4", "Ação", "18 anos", 103, new List<string> { "15:30", "19:30", "21:00" }));
         }
         public void AdicionarItem()
         {
