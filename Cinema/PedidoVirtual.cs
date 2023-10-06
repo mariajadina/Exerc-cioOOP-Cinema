@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cinema
 {
-    public class Pedido
+    public class PedidoVirtual
     {
         //Atributos
         private string nomeCliente { get; set; }
@@ -18,7 +18,7 @@ namespace Cinema
         private double valorTotal { get; set; }
         private string tipoPagemnto { get; set; }
 
-        public Pedido(string nomeCliente = null, string cpf = null, string tituloFilme = null, string nomeSala = null, string cadeira = null, string horario = null, double valorTotal = 0, string tipoPagemnto = null)
+        public PedidoVirtual(string nomeCliente = null, string cpf = null, string tituloFilme = null, string nomeSala = null, string cadeira = null, string horario = null, double valorTotal = 0, string tipoPagemnto = null)
         {
             if (!string.IsNullOrEmpty(nomeCliente))
             {
@@ -48,6 +48,18 @@ namespace Cinema
             {
                 this.valorTotal = valorTotal;
             }
+        }
+
+        public void Listar()
+        {
+            Console.WriteLine($" Nome: {nomeCliente}");
+            Console.WriteLine($" CPF: {cpf}");
+            Console.WriteLine($" Filme: {tituloFilme}");
+            Console.WriteLine($" Sala: {nomeSala}");
+            Console.WriteLine($" ID Cadeira: {cadeira}");
+            Console.WriteLine($" Horário: {horario}");
+            Console.WriteLine($" Valor Total: {valorTotal}");
+            Console.WriteLine("-----------------------");
         }
     }
 }
