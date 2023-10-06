@@ -13,10 +13,8 @@ namespace Cinema
         //private int idade; fazer como método depois e chegar na idade por meio da data de nascimento
         private string dataNascimento;
         private string cpf;
-        //private string endereco;
-        //private string bairro;
         private string telefone;
-        //private string email;
+        private string email;
         //ver como herdar o beneficio do cliente fisico;
 
         //Acessadores get e set
@@ -67,46 +65,14 @@ namespace Cinema
                 if (!string.IsNullOrEmpty(value))
                 {
                     cpf = value;
-                } else
+                }
+                else
                 {
                     throw new Exception("Valor inválido para CPF.");
                 }
             }
         }
-        //public string Endereco
-        //{
-        //    get
-        //    {
-        //        return endereco;
-        //    }
-        //    set
-        //    {
-        //        if (!string.IsNullOrEmpty(value))
-        //        {
-        //            endereco = value;
-        //        } else
-        //        {
-        //            throw new Exception("Valor inválido para endereço.");
-        //        }
-        //    }
-        //}
-        //public string Bairro
-        //{
-        //    get
-        //    {
-        //        return bairro;
-        //    }
-        //    set
-        //    {
-        //        if (!string.IsNullOrEmpty(value))
-        //        {
-        //            bairro = value;
-        //        } else
-        //        {
-        //            throw new Exception("Valor inválido para bairro.");
-        //        }
-        //    }
-        //}
+        
         public string Telefone
         {
             get
@@ -118,28 +84,53 @@ namespace Cinema
                 if (!string.IsNullOrEmpty(value))
                 {
                     telefone = value;
-                } else
+                }
+                else
                 {
                     throw new Exception("Valor inválido para telefone.");
                 }
             }
         }
-        //public string Email
-        //{
-        //    get
-        //    {
-        //        return email;
-        //    }
-        //    set
-        //    {
-        //        if (!string.IsNullOrEmpty(value))
-        //        {
-        //            email = value;
-        //        } else
-        //        {
-        //            throw new Exception("Valor inválido para email.");
-        //        }
-        //    }
-        //}
+        public string Email
+        {
+            get
+            {
+                return email;
+            }
+            set
+            {
+                if (!string.IsNullOrEmpty(value))
+                {
+                    email = value;
+                }
+                else
+                {
+                    throw new Exception("valor inválido para email.");
+                }
+            }
+        }
+        public ClienteVirtual(string nome = null, string dataNascimento = null, string cpf = null, string telefone = null, string email = null)
+        {
+            if (!string.IsNullOrEmpty(nome))
+            {
+                this.nome = nome;
+            }
+            if (!string.IsNullOrEmpty(dataNascimento))
+            {
+                this.dataNascimento = dataNascimento;
+            }
+            if (!string.IsNullOrEmpty(cpf))
+            {
+                this.cpf = cpf;
+            }
+            if (!string.IsNullOrEmpty(telefone))
+            {
+                this.telefone = telefone;
+            }
+            if (!string.IsNullOrEmpty(email))
+            {
+                this.email = email;
+            }
+        }
     }
 }
