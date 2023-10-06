@@ -10,6 +10,7 @@ namespace Cinema
     {
         public static FilmeModel FilmeModel = new FilmeModel();
         public static SalaModel SalaModel = new SalaModel();
+        public static ClienteVirtualModel ClienteVirtualModel = new ClienteVirtualModel();
 
         private static string MenuPrincipal()
         {
@@ -67,7 +68,12 @@ namespace Cinema
             switch (SubMenuCliente())
             {
                 case "1":
-                    //TODO: função visualizar lista de cliente
+                    Console.Clear();
+                    Console.WriteLine("Clientes");
+                    ClienteVirtualModel.LerLista();
+                    Console.WriteLine("Pressione qualquer tecla para continuar.");
+                    Console.ReadLine();
+                    MostrarSubMenuCliente();
                     break;
                 case "2":
                     //TODO: função visualizar lista de pedidos
