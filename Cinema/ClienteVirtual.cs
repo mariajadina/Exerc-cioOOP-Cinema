@@ -132,5 +132,15 @@ namespace Cinema
                 this.email = email;
             }
         }
+        public void Listar()
+        {
+            Console.WriteLine($" Nome: {nome}");
+            Console.WriteLine($" Data de Nascimento: {dataNascimento}");
+            Console.WriteLine($" CPF: {cpf}");
+            Console.WriteLine($" Telefone: {telefone}");
+            Console.WriteLine($" E-mail: {email}");
+            Console.WriteLine("-----------------------");
+
+        }
     }
 }
