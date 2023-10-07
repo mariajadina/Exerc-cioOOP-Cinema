@@ -109,7 +109,7 @@ namespace Cinema
                 }
             }
         }
-        public ClienteVirtual(string nome = null, string dataNascimento = null, string cpf = null, string telefone = null, string email = null)
+        public ClienteVirtual(string nome = null, string dataNascimento = null, string cpf = null, string telefone = null, string email = null, string beneficio = null)
         {
             if (!string.IsNullOrEmpty(nome))
             {
@@ -131,6 +131,10 @@ namespace Cinema
             {
                 this.email = email;
             }
+            if (!string.IsNullOrEmpty(beneficio))
+            {
+                this.Beneficio = beneficio;
+            }
         }
         public void Listar()
         {
@@ -139,6 +143,7 @@ namespace Cinema
             Console.WriteLine($" CPF: {cpf}");
             Console.WriteLine($" Telefone: {telefone}");
             Console.WriteLine($" E-mail: {email}");
+            Console.WriteLine($" Benefício: {Beneficio}");
             Console.WriteLine("-----------------------");
         }
     }
