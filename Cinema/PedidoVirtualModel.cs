@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Cinema
 {
-    public class PedidoModel
+    public class PedidoVirtualModel
     {
         private List<PedidoVirtual> pedidosVirtuais = new List<PedidoVirtual>();
 
-        public PedidoModel()
+        public PedidoVirtualModel()
         {
             pedidosVirtuais.Add(new PedidoVirtual("João Cleber", "596.365.965-08", "Patrulha Canina: um Filme Superpoderoso", "Candy", "15", "17:00", 27.00));
             pedidosVirtuais.Add(new PedidoVirtual("Lêoncio Walrus", "694.965.965-29", "Patrulha Canina: um Filme Superpoderoso", "Candy", "16", "17:00", 13.50));
