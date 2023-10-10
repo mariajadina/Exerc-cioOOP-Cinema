@@ -12,7 +12,7 @@ namespace Cinema
         public ClienteFisicoModel()
         {
             clientesFisicos.Add(new ClienteFisico("PCD"));
-            clientesFisicos.Add(new ClienteFisico("Assinante do NSC Total"));
+            clientesFisicos.Add(new ClienteFisico("Assinante do Clube NSC"));
             clientesFisicos.Add(new ClienteFisico("Idoso"));
             clientesFisicos.Add(new ClienteFisico("PCD"));
             clientesFisicos.Add(new ClienteFisico("Estudante"));
