@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cinema
 {
-    internal class Login
+    public class Login
     {
         public static void LoginUsuario()
         {

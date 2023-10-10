@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cinema
 {
-    internal class ClienteVirtual : ClienteFisico
+    public class ClienteVirtual : ClienteFisico
     {
         //Atributos
         private string nome;
