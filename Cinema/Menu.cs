@@ -39,7 +39,7 @@ namespace Cinema
             Console.WriteLine("0 - Retornar");
             return Console.ReadLine();
         }
-        public void MostrarMenuPrincipal()
+        public static void MostrarMenuPrincipal()
         {
             Console.Clear();
             switch (MenuPrincipal())
@@ -63,7 +63,7 @@ namespace Cinema
                     break;
             }
         }
-        public void MostrarSubMenuCliente()
+        public static void MostrarSubMenuCliente()
         {
             Console.Clear();
             switch (SubMenuCliente())
@@ -96,7 +96,7 @@ namespace Cinema
             }
         }
 
-        public void MostrarSubMenuFilme(string mensagem = "")
+        public static void MostrarSubMenuFilme(string mensagem = "")
         {
             Console.Clear();
             Console.WriteLine("Filmes");
@@ -138,7 +138,7 @@ namespace Cinema
             }
         }
 
-        public void MostrarSubMenuSala(string mensagem = "")
+        public static void MostrarSubMenuSala(string mensagem = "")
         {
             Console.Clear();
             Console.WriteLine("Salas");
