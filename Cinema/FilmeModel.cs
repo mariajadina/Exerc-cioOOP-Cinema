@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cinema
 {
-    public class FilmeModel
+    public class FilmeModel : ICRUD
     {
         private List<Filme> filmes = new List<Filme>();
 

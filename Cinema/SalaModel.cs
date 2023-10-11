@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Cinema
 {
-    public class SalaModel
+    public class SalaModel : ICRUD
     {
         private List<Sala> salas = new List<Sala>();
 
