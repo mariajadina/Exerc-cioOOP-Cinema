@@ -12,6 +12,7 @@ namespace Cinema
         public static SalaModel SalaModel = new SalaModel();
         public static ClienteVirtualModel ClienteVirtualModel = new ClienteVirtualModel();
         public static ClienteFisicoModel ClienteFisicoModel = new ClienteFisicoModel();
+        public static PedidoVirtualModel PedidoVirtualModel = new PedidoVirtualModel();
 
         private static string MenuPrincipal()
         {
@@ -79,7 +80,7 @@ namespace Cinema
                     MostrarSubMenuCliente();
                     break;
                 case "2":
-                    //TODO: função visualizar lista de pedidos
+                    PedidoVirtualModel.LerLista();
                     break;
                 case "3":
                     //TODO: função visualizar pedidos por clientes
