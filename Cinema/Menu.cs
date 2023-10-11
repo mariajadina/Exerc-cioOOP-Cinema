@@ -73,14 +73,19 @@ namespace Cinema
                     Console.Clear();
                     Console.WriteLine("Clientes Virtuais:\n");
                     ClienteVirtualModel.LerLista();
-                    Console.WriteLine("Clientes Físicos:\n");
-                    ClienteFisicoModel.LerLista();
                     Console.WriteLine("Pressione qualquer tecla para continuar.");
                     Console.ReadLine();
                     MostrarSubMenuCliente();
                     break;
                 case "2":
+                    Console.Clear();
+                    Console.WriteLine("Pedidos Virtuais:\n");
                     PedidoVirtualModel.LerLista();
+                    Console.WriteLine("Pedidos Físicos:\n");
+                    ClienteFisicoModel.LerLista();
+                    Console.WriteLine("Pressione qualquer tecla para continuar.");
+                    Console.ReadLine();
+                    MostrarSubMenuCliente();
                     break;
                 case "3":
                     //TODO: função visualizar pedidos por clientes
